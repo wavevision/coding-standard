@@ -1,10 +1,10 @@
 # Wavevision Coding Standard
 
-Default code style for Wavevision apps.
+Code style rules and presets for [Php](#php), [SCSS and TypeScript](#scss-and-typescript).
 
 **Requirements:**
 
-- PHP 7.2
+- Php 7.2
 - Node.js 10.16.0
 
 ## Php
