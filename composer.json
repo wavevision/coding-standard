@@ -1,13 +1,23 @@
 {
-    "name": "wavevision/coding-standard",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Jakub Filla",
-            "email": "jakub.filla@wavevision.cz"
-        }
-    ],
-    "require": {
-        "slevomat/coding-standard": "^5.0"
+  "name": "wavevision/coding-standard",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wavevision s.r.o.",
+      "email": "info@wavevision.com"
+    },
+    {
+      "name": "Jakub Filla",
+      "email": "jakub.filla@wavevision.com"
+    },
+    {
+      "name": "Vít Rozsíval",
+      "email": "vit@wavevision.com"
     }
+  ],
+  "homepage": "https://github.com/wavevision/coding-standard",
+  "require": {
+    "slevomat/coding-standard": "^5.0"
+  }
 }
