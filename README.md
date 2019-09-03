@@ -60,15 +60,15 @@ module.exports = { extends: ['@wavevision/coding-standard/ts/eslint'] };
 #### `postcss.config.js`
 
 ```javascript
-const base = require('@wavevision/coding-standard/scss/postcss');
-module.exports = base;
+const config = require('@wavevision/coding-standard/scss/postcss');
+module.exports = config;
 ```
 
 #### `prettier.config.js`
 
 ```javascript
-const base = require('@wavevision/coding-standard/ts/prettier');
-module.exports = base;
+const config = require('@wavevision/coding-standard/ts/prettier');
+module.exports = config;
 ```
 
 #### `stylelint.config.js`
