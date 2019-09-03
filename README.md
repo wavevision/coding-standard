@@ -4,8 +4,8 @@ Default code style for Wavevision apps.
 
 **Requirements:**
 
-- PHP 7.2+
-- Node.js 10.16.0+
+- PHP 7.2
+- Node.js 10.16.0
 
 ## Php
 
