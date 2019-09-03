@@ -46,6 +46,20 @@ Rules and presets for:
 - [stylelint](https://github.com/stylelint/stylelint)
 - [TypeScript](https://github.com/microsoft/TypeScript)
 
+### Installation
+
+Via [yarn](https://yarnpkg.com)
+
+```bash
+yarn add --dev @wavevision/coding-standard
+```
+
+or [npm](https://www.npmjs.com)
+
+```bash
+npm install --save-dev @wavevision/coding-standard
+```
+
 ### Setup
 
 Following config examples can be further extended and customized according to project's needs compliant with respective library docs.
