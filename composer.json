@@ -1,0 +1,13 @@
+{
+    "name": "wavevision/coding-standard",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jakub Filla",
+            "email": "jakub.filla@wavevision.cz"
+        }
+    ],
+    "require": {
+        "slevomat/coding-standard": "^5.0"
+    }
+}
