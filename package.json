@@ -1,7 +1,7 @@
 {
   "name": "@wavevision/coding-standard",
   "version": "1.0.0",
-  "description": "The Wavevision PHP and TypeScript coding standard.",
+  "description": "The Wavevision SCSS and TypeScript coding standard.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wavevision/coding-standard.git"
