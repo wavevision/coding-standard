@@ -18,6 +18,7 @@
   ],
   "homepage": "https://github.com/wavevision/coding-standard",
   "require": {
+    "php": ">=7.2",
     "slevomat/coding-standard": "^5.0"
   }
 }

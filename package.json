@@ -22,6 +22,9 @@
     "url": "https://github.com/wavevision/coding-standard/issues"
   },
   "homepage": "https://github.com/wavevision/coding-standard",
+  "engines": {
+    "node": "10.16.0"
+  },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
