@@ -18,7 +18,7 @@ Rules for:
 Via [Composer](https://getcomposer.org/)
 
 ```bash
-composer require wavevision/coding-stadard
+composer require --dev wavevision/coding-standard
 ```
 
 ### Setup
