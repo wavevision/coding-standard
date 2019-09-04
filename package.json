@@ -1,6 +1,6 @@
 {
   "name": "@wavevision/coding-standard",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Wavevision SCSS and TypeScript coding standard.",
   "repository": {
     "type": "git",
@@ -56,6 +56,12 @@
     "stylelint": "^10.1.0",
     "stylelint-config-sass-guidelines": "^6.0.0",
     "stylelint-selector-bem-pattern": "^2.1.0",
+    "typescript": "^3.6.2"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.5.5",
+    "eslint": "^6.3.0",
+    "stylelint": "^10.1.0",
     "typescript": "^3.6.2"
   }
 }
