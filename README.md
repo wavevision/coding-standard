@@ -83,13 +83,13 @@ module.exports = {
 #### `postcss.config.js`
 
 ```javascript
-module.exports = require.resolve('@wavevision/coding-standard/scss/postcss');
+module.exports = require('@wavevision/coding-standard/scss/postcss');
 ```
 
 #### `prettier.config.js`
 
 ```javascript
-module.exports = require.resolve('@wavevision/coding-standard/ts/prettier');
+module.exports = require('@wavevision/coding-standard/ts/prettier');
 ```
 
 #### `stylelint.config.js`
