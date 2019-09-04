@@ -1,6 +1,6 @@
 {
   "name": "@wavevision/coding-standard",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The Wavevision SCSS and TypeScript coding standard.",
   "repository": {
     "type": "git",
@@ -35,6 +35,8 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@babel/runtime": "^7.5.5",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
     "autoprefixer": "^9.6.1",
     "babel-jest": "^24.9.0",
     "core-js": "3.2.1",
@@ -60,8 +62,15 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.5.5",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
     "eslint": "^6.3.0",
     "stylelint": "^10.1.0",
     "typescript": "^3.6.2"
+  },
+  "scripts": {
+    "eslint": "eslint --fix ./scss ./ts",
+    "fix": "yarn eslint ; yarn prettier",
+    "prettier": "prettier --write './**/*.{js,ts}'"
   }
 }
