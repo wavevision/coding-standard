@@ -75,21 +75,21 @@ module.exports = {
 #### `eslintrc.js`
 
 ```javascript
-module.exports = { extends: ['@wavevision/coding-standard/ts/eslint'] };
+module.exports = {
+  extends: require.resolve('@wavevision/coding-standard/ts/eslint'),
+};
 ```
 
 #### `postcss.config.js`
 
 ```javascript
-const config = require('@wavevision/coding-standard/scss/postcss');
-module.exports = config;
+module.exports = require.resolve('@wavevision/coding-standard/scss/postcss');
 ```
 
 #### `prettier.config.js`
 
 ```javascript
-const config = require('@wavevision/coding-standard/ts/prettier');
-module.exports = config;
+module.exports = require.resolve('@wavevision/coding-standard/ts/prettier');
 ```
 
 #### `stylelint.config.js`
