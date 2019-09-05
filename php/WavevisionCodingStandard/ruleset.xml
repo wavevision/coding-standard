@@ -35,6 +35,7 @@
 
 
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
     <!--php storm dont suggest for generics-->
     <!--rule ref="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/-->
     <!--rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/-->
@@ -45,5 +46,9 @@
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
+    
+    <rule ref="PSR1.Files.SideEffects.FoundWithSymbols">
+        <exclude-pattern>Test.php</exclude-pattern>
+    </rule>
 
 </ruleset>
