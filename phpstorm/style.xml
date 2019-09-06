@@ -1,0 +1,25 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <PHPCodeStyleSettings>
+      <option name="KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE" value="true" />
+      <option name="BLANK_LINES_AROUND_CONSTANTS" value="1" />
+      <option name="KEEP_BLANK_LINES_AFTER_LBRACE" value="0" />
+      <option name="SPACE_AROUND_ASSIGNMENT_IN_DECLARE" value="true" />
+    </PHPCodeStyleSettings>
+    <codeStyleSettings language="PHP">
+      <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="0" />
+      <option name="KEEP_BLANK_LINES_IN_CODE" value="0" />
+      <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
+      <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
+      <option name="BLANK_LINES_AROUND_FIELD" value="1" />
+      <option name="BLANK_LINES_AFTER_CLASS_HEADER" value="1" />
+      <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+      <option name="METHOD_PARAMETERS_WRAP" value="5" />
+      <option name="METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
+      <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
+      <indentOptions>
+        <option name="USE_TAB_CHARACTER" value="true" />
+      </indentOptions>
+    </codeStyleSettings>
+  </code_scheme>
+</component>

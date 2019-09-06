@@ -26,5 +26,8 @@
     "psr-4": {
       "WavevisionCodingStandard\\": "php/WavevivisionCodingStandard/"
     }
+  },
+  "scripts": {
+    "post-package-update": "echo `realpath .`"
   }
 }
