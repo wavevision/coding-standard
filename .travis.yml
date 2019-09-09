@@ -13,6 +13,8 @@ jobs:
   include:
     - script: composer lint
     - script: composer phpcs
+    - script: composer phpstan
+    - script: composer test
 
 cache:
   directories:
