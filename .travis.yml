@@ -14,7 +14,12 @@ jobs:
     - script: composer lint
     - script: composer phpcs
     - script: composer phpstan
-    - script: composer test
+    - stage: test & coverage
+      install:
+        - wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar
+      script:
+        - composer test
+        - php php-coveralls.phar --verbose --config build/coveralls.yml
 
 cache:
   directories:

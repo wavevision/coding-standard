@@ -1,5 +1,7 @@
 # Wavevision Coding Standard
 
+[![Build Status](https://travis-ci.org/wavevision/coding-standard.svg?branch=master)](https://travis-ci.org/wavevision/coding-standard)
+
 Code style rules and presets for [Php](#php), [SCSS and TypeScript](#scss-and-typescript). Also contains default [PhpStorm](#phpstorm) project code style.
 
 **Requirements:**
