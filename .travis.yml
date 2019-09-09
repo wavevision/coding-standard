@@ -1,0 +1,18 @@
+os: linux
+dist: xenial
+language: php
+
+git:
+  depth: 1
+
+
+before_script:
+  - composer install
+
+jobs:
+  include:
+    - script: composer lint
+
+cache:
+  directories:
+    - $HOME/.composer/cache
