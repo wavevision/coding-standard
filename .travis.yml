@@ -3,10 +3,8 @@ dist: xenial
 language: php
 
 php:
-  - 7.1
   - 7.2
   - 7.3
-  - 7.4
 
 git:
   depth: 1
@@ -17,7 +15,7 @@ before_script:
 
 jobs:
   include:
-    - stage: test ParallelLint
+    - stage: ParallelLint
       script: composer lint
     - stage: CodeSniffer
       script: composer phpcs
