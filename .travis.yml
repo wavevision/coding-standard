@@ -3,11 +3,10 @@ dist: xenial
 language: php
 
 php:
-  - 7.3
+  - 7.2
 
 git:
   depth: 1
-
 
 before_script:
   - composer install
