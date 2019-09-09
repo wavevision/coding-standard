@@ -8,13 +8,20 @@ use PHP_CodeSniffer\Sniffs\Sniff;
 class ConstantVisibilitySortingSniff implements Sniff
 {
 
-	private const CODE_INCORRECTLY_SORTED_VISIBILITY = 'IncorrectlySortedVisibility';
+	public const CODE_INCORRECTLY_SORTED_VISIBILITY = 'IncorrectlySortedVisibility';
 
-	public function register()
+	/**
+	 * @return array<mixed>
+	 */
+	public function register(): array
 	{
 		return [T_CONST];
 	}
 
+	/**
+	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
+	 * @return void|int
+	 */
 	public function process(File $phpcsFile, $stackPtr)
 	{
 		$tokens = $phpcsFile->getTokens();
@@ -26,7 +33,7 @@ class ConstantVisibilitySortingSniff implements Sniff
 			T_PRIVATE => 3,
 		];
 		while ($ptr = $phpcsFile->findNext(T_CONST, $ptr)) {
-			$visibilityPointer = $phpcsFile->findPrevious([T_PRIVATE, T_PROTECTED, T_PUBLIC], $ptr);
+			$visibilityPointer = $phpcsFile->findPrevious([T_PRIVATE, T_PROTECTED, T_PUBLIC], (int)$ptr);
 			$visibilityToken = $tokens[$visibilityPointer];
 			$currentLevel = $levels[$visibilityToken['code']];
 			if ($level > $currentLevel) {

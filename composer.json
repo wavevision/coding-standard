@@ -24,10 +24,26 @@
   },
   "autoload": {
     "psr-4": {
-      "WavevisionCodingStandard\\": "php/WavevivisionCodingStandard/"
+      "WavevisionCodingStandard\\": "php/WavevisionCodingStandard/"
     }
   },
+  "require-dev": {
+    "phpunit/phpunit": "^8.3",
+    "jakub-onderka/php-parallel-lint": "^1.0",
+    "phpstan/phpstan": "^0.10"
+  },
   "scripts": {
-    "post-package-update": "echo `realpath .`"
+    "lint": "vendor/bin/parallel-lint -e php php ",
+    "phpcs": "vendor/bin/phpcs -sp --standard=codesniffer-ruleset.xml --extensions=php php --ignore=*/data/*",
+    "phpcbf": "vendor/bin/phpcbf -spn --standard=codesniffer-ruleset.xml --extensions=php php --ignore=*/data/*",
+    "cs": "composer phpcbf ; composer phpcs",
+    "phpstan": "vendor/bin/phpstan analyse php --level max",
+    "test": "./vendor/bin/phpunit",
+    "fix": [
+      "@lint",
+      "@cs",
+      "@phpstan",
+      "@test"
+    ]
   }
 }
