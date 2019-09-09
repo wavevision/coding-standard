@@ -1,6 +1,6 @@
 # Wavevision Coding Standard
 
-Code style rules and presets for [Php](#php), [SCSS and TypeScript](#scss-and-typescript).
+Code style rules and presets for [Php](#php), [SCSS and TypeScript](#scss-and-typescript). Also contains default [PhpStorm](#phpstorm) project code style.
 
 **Requirements:**
 
@@ -120,5 +120,5 @@ This should most likely happen in your project's top-level entry point.
 
 ## PhpStorm
 
-1) Set `File > Settings > Editor > CodeStyle` > Scheme to `Project`
-2) Symlink `phpstorm/style.xml` to `.idea/codeStyles/Project.xml`
+1. Set `File > Settings > Editor > CodeStyle` > Scheme to `Project`
+2. Symlink `phpstorm/style.xml` to `.idea/codeStyles/Project.xml`
