@@ -19,7 +19,7 @@ jobs:
         - wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar
       script:
         - composer test
-        - php php-coveralls.phar --verbose --config build/coveralls.yml
+        - php php-coveralls.phar --verbose --config php/tests/.coveralls.yml
 
 cache:
   directories:
