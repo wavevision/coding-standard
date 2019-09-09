@@ -12,6 +12,7 @@ before_script:
 jobs:
   include:
     - script: composer lint
+    - script: composer phpcs
 
 cache:
   directories:
