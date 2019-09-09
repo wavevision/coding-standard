@@ -20,14 +20,14 @@
     </rule>
     <rule ref="Generic.Metrics.CyclomaticComplexity">
         <properties>
-            <property name="complexity" value="10"/>
-            <property name="absoluteComplexity" value="15"/>
+            <property name="complexity" value="8"/>
+            <property name="absoluteComplexity" value="12"/>
         </properties>
     </rule>
     <rule ref="Generic.Metrics.NestingLevel">
         <properties>
-            <property name="nestingLevel" value="8"/>
-            <property name="absoluteNestingLevel" value="12"/>
+            <property name="nestingLevel" value="5"/>
+            <property name="absoluteNestingLevel" value="8"/>
         </properties>
     </rule>
     <rule ref="Generic.NamingConventions.CamelCapsFunctionName">
@@ -82,9 +82,7 @@
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
-    <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
     <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/>
 </ruleset>
