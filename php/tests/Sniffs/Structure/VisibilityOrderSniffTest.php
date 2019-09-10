@@ -19,12 +19,17 @@ class VisibilityOrderSniffTest extends TestCase
 		self::assertSniffError(
 			$checkedFile,
 			14,
-			VisibilityOrderSniff::INVALID_STATIC_PROPERTIES_ORDER
+			VisibilityOrderSniff::INVALID_STATIC_PROPERTY_ORDER
 		);
 		self::assertSniffError(
 			$checkedFile,
 			20,
 			VisibilityOrderSniff::INVALID_MEMBER_ORDER
+		);
+		self::assertSniffError(
+			$checkedFile,
+			35,
+			VisibilityOrderSniff::INVALID_METHOD_ORDER
 		);
 	}
 
