@@ -39,7 +39,7 @@
     <rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing"/>
     <rule ref="Generic.WhiteSpace.ScopeIndent">
         <properties>
-            <property name="exact" value="true"/>
+            <property name="exact" value="false"/>
         </properties>
     </rule>
     <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
