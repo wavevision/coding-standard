@@ -76,7 +76,7 @@ module.exports = {
 };
 ```
 
-#### `eslintrc.js`
+#### `.eslintrc.js`
 
 ```javascript
 module.exports = {
