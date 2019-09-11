@@ -32,6 +32,11 @@
     "jakub-onderka/php-parallel-lint": "^1.0",
     "phpstan/phpstan": "^0.10"
   },
+  "suggest": {
+    "phpstan/phpstan": "PHP Static Analysis Tool - discover bugs in your code without running it!",
+    "sebastianbergmann/phpunit": "The PHP Unit Testing framework.",
+    "jakub-onderka/php-parallel-lint": "This tool check syntax of PHP files faster than serial check with fancier output."
+  },
   "scripts": {
     "lint": "vendor/bin/parallel-lint -e php php ",
     "phpcs": "vendor/bin/phpcs -sp --standard=codesniffer-ruleset.xml --extensions=php php --ignore=*/data/*",
