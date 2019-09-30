@@ -2,6 +2,7 @@
 
 namespace WavevisionCodingStandard\Sniffs\Structure;
 
+use PHP_CodeSniffer\Exceptions\RuntimeException;
 use PHP_CodeSniffer\Exceptions\TokenizerException;
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
@@ -133,7 +134,8 @@ class VisibilityOrderSniff implements Sniff
 				if ($include($block)) {
 					$blocks[$ptr] = $levels[$block['scope']];
 				}
-			} catch (TokenizerException $ex) {
+			} catch (TokenizerException | RuntimeException $ex) {
+				//todo better
 			}
 			$ptr++;
 		}
