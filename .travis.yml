@@ -1,7 +1,6 @@
 os: linux
 dist: xenial
 language: php
-sudo: true
 
 php:
   - 7.2
@@ -10,22 +9,20 @@ git:
   depth: 1
 
 before_script:
-  - sudo apt-get install phing -y
-  - phing init
-
+  - composer install
 jobs:
   include:
     - stage: ParallelLint
-      script: phing lint
+      script: vendor/bin/phing lint
     - stage: CodeSniffer
-      script: phing phpcs
+      script: vendor/bin/phing phpcs
     - stage: PHPStan
-      script: phing phpstan
+      script: vendor/bin/phing phpstan
     - stage: Test
       install:
         - wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar
       script:
-        - phing test
+        - vendor/bin/phing test
         - php php-coveralls.phar --verbose --config php/tests/.coveralls.yml
 cache:
   directories:
