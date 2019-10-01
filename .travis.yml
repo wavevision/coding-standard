@@ -9,21 +9,21 @@ git:
   depth: 1
 
 before_script:
-  - composer install
+  - phnig init
 
 jobs:
   include:
     - stage: ParallelLint
-      script: composer lint
+      script: phing lint
     - stage: CodeSniffer
-      script: composer phpcs
+      script: phing phpcs
     - stage: PHPStan
-      script: composer phpstan
+      script: phing phpstan
     - stage: Test
       install:
         - wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar
       script:
-        - composer test
+        - phing test
         - php php-coveralls.phar --verbose --config php/tests/.coveralls.yml
 cache:
   directories:

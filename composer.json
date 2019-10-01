@@ -18,6 +18,9 @@
     }
   ],
   "homepage": "https://github.com/wavevision/coding-standard",
+  "config": {
+    "bin-dir": "vendor/bin"
+  },
   "require": {
     "php": ">=7.2",
     "slevomat/coding-standard": "^5.0"
@@ -38,7 +41,7 @@
     "jakub-onderka/php-parallel-lint": "This tool check syntax of PHP files faster than serial check with fancier output."
   },
   "scripts": {
-    "lint": "vendor/bin/parallel-lint -e php php ",
+    "lint": "parallel-lint -e php php ",
     "phpcs": "vendor/bin/phpcs -sp --standard=codesniffer-ruleset.xml --extensions=php php --ignore=*/data/*",
     "phpcbf": "vendor/bin/phpcbf -spn --standard=codesniffer-ruleset.xml --extensions=php php --ignore=*/data/*",
     "cs": "composer phpcbf ; composer phpcs",
