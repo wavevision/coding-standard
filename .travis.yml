@@ -13,16 +13,16 @@ before_script:
 jobs:
   include:
     - stage: ParallelLint
-      script: vendor/bin/phing lint
+      script: composer phing lint
     - stage: CodeSniffer
-      script: vendor/bin/phing phpcs
+      script: composer phing phpcs
     - stage: PHPStan
-      script: vendor/bin/phing phpstan
+      script: composer phing phpstan
     - stage: Test
       install:
         - wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar
       script:
-        - vendor/bin/phing test
+        - composer phing test
         - php php-coveralls.phar --verbose --config php/tests/.coveralls.yml
 cache:
   directories:
