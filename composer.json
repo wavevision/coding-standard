@@ -42,17 +42,6 @@
     "jakub-onderka/php-parallel-lint": "This tool check syntax of PHP files faster than serial check with fancier output."
   },
   "scripts": {
-    "lint": "parallel-lint -e php php ",
-    "phpcs": "vendor/bin/phpcs -sp --standard=codesniffer-ruleset.xml --extensions=php php --ignore=*/data/*",
-    "phpcbf": "vendor/bin/phpcbf -spn --standard=codesniffer-ruleset.xml --extensions=php php --ignore=*/data/*",
-    "cs": "composer phpcbf ; composer phpcs",
-    "phpstan": "vendor/bin/phpstan analyse php --level max",
-    "test": "./vendor/bin/phpunit",
-    "fix": [
-      "@lint",
-      "@cs",
-      "@phpstan",
-      "@test"
-    ]
+    "phing": "phing"
   }
 }
