@@ -9,7 +9,7 @@ git:
   depth: 1
 
 before_script:
-  - phnig init
+  - phing init
 
 jobs:
   include:
