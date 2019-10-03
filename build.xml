@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="Wavevision Point" default="init">
-
-
-    <property name="src" value="php/WavevisionCodingStandard"/>
-    <property name="tests" value="php/tests"/>
-    <property name="phpBin" value="php"/>
+    <property name="bin" value="vendor/bin"/>
     <property name="codeSnifferExclude" value="*/data/*"/>
     <property name="codeSnifferRuleset" value="codesniffer-ruleset.xml"/>
-    <property name="bin" value="vendor/bin"/>
+    <property name="phpBin" value="php"/>
+    <property name="src" value="php/WavevisionCodingStandard"/>
+    <property name="temp" value="temp"/>
+    <property name="tests" value="php/tests"/>
 
-    <target name="check" description="Run lints and tests. Run before every pull request"
+    <target name="fix" description="Run lints and tests. Run before every pull request"
             depends="rm-cache, lint, cs, phpstan, test"/>
     <target name="cs" description="Check code style and fix it if possible" depends="phpcbf, phpcs"/>
     <target name="init" description="Initialize project" depends="composer"/>
@@ -18,7 +17,7 @@
         <exec executable="rm -rf temp/cache"/>
     </target>
 
-    <target name="composer" description="Download php dependencies">
+    <target name="composer" description="Download PHP dependencies">
         <exec
                 executable="composer"
                 logoutput="true"
@@ -29,7 +28,7 @@
         </exec>
     </target>
 
-    <target name="lint" description="Check php syntax">
+    <target name="lint" description="Check PHP syntax">
         <exec
                 executable="${bin}/parallel-lint"
                 logoutput="true"
@@ -99,14 +98,15 @@
         </exec>
     </target>
 
-    <target name="test-no-coverage" description="Run tests without coverage">
+    <target name="test:coverage" description="Run tests with coverage">
         <exec
                 executable="${bin}/phpunit"
                 logoutput="true"
                 passthru="true"
                 checkreturn="true"
         >
-            <arg value="--no-coverage"/>
+            <arg value="--coverage-html=${temp}/coverage"/>
+            <arg value="--coverage-clover=${temp}/coverage.xml"/>
         </exec>
     </target>
 
