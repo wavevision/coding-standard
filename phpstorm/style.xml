@@ -32,6 +32,7 @@
       <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
       <option name="BLANK_LINES_AROUND_FIELD" value="1" />
       <option name="BLANK_LINES_AFTER_CLASS_HEADER" value="1" />
+      <option name="BLANK_LINES_BEFORE_CLASS_END" value="1" />
       <option name="CALL_PARAMETERS_WRAP" value="5" />
       <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
       <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
