@@ -37,6 +37,7 @@ module.exports = {
       'error',
       { allowExpressions: true, allowTypedFunctionExpressions: true },
     ],
+    '@typescript-eslint/explicit-member-accessibility': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
     camelcase: 'off',
     'comma-dangle': 'off',
