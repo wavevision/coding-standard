@@ -1,3 +1,3 @@
 module.exports = {
-  extends: require.resolve('./ts/eslint.js'),
+  extends: require.resolve('./ts/eslint/base'),
 };

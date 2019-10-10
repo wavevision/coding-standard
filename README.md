@@ -72,17 +72,25 @@ Following config examples can be further extended and customized according to pr
 
 ```javascript
 module.exports = {
-  presets: ['@wavevision/coding-standard/ts/babel'],
+  presets: ['@wavevision/coding-standard/ts/babel/base'],
 };
 ```
+
+> **React version:** `@wavevision/coding-standard/ts/babel/react`.
 
 #### `.eslintrc.js`
 
 ```javascript
 module.exports = {
-  extends: require.resolve('@wavevision/coding-standard/ts/eslint'),
+  extends: require.resolve('@wavevision/coding-standard/ts/eslint/base'),
+  parserOptions: {
+    project: '**/tsconfig.json',
+    tsconfigRootDir: '.',
+  },
 };
 ```
+
+> **React version:** `@wavevision/coding-standard/ts/eslint/react`.
 
 #### `postcss.config.js`
 
