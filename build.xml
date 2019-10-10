@@ -3,6 +3,8 @@
     <property name="bin" value="vendor/bin"/>
     <property name="codeSnifferExclude" value="*/data/*"/>
     <property name="codeSnifferRuleset" value="codesniffer-ruleset.xml"/>
+    <property name="coverage" value="${temp}/coverage/php"/>
+    <property name="coverageClover" value="${coverage}/coverage.xml"/>
     <property name="phpBin" value="php"/>
     <property name="src" value="php/WavevisionCodingStandard"/>
     <property name="temp" value="temp"/>
@@ -98,6 +100,18 @@
         </exec>
     </target>
 
+    <target name="test:ci" description="Run tests and publish to Coveralls" depends="test:coverage">
+        <exec
+                executable="${bin}/php-coveralls"
+                logoutput="true"
+                passthru="true"
+                checkreturn="true"
+        >
+            <arg value="--coverage_clover=${coverageClover}"/>
+            <arg value="--verbose"/>
+        </exec>
+    </target>
+
     <target name="test:coverage" description="Run tests with coverage">
         <exec
                 executable="${bin}/phpunit"
@@ -105,10 +119,8 @@
                 passthru="true"
                 checkreturn="true"
         >
-            <arg value="--coverage-html=${temp}/coverage"/>
-            <arg value="--coverage-clover=${temp}/coverage.xml"/>
+            <arg value="--coverage-clover=${coverageClover}"/>
+            <arg value="--coverage-html=${coverage}/html"/>
         </exec>
     </target>
-
-
 </project>
