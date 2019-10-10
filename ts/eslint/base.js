@@ -32,6 +32,7 @@ module.exports = {
     ],
     '@typescript-eslint/explicit-member-accessibility': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
+    'arrow-parens': ['error', 'as-needed'],
     camelcase: 'off',
     'comma-dangle': 'off',
     'consistent-return': 'off',
