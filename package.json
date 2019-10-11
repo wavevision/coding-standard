@@ -61,6 +61,9 @@
     "stylelint-selector-bem-pattern": "^2.1.0",
     "typescript": "^3.6.3"
   },
+  "devDependencies": {
+    "release-it": "^12.4.3"
+  },
   "peerDependencies": {
     "@babel/core": "^7.6.2",
     "@typescript-eslint/eslint-plugin": "^2.3.2",
@@ -72,6 +75,7 @@
   "scripts": {
     "eslint": "eslint --fix ./scss ./ts",
     "fix": "run-s eslint prettier",
-    "prettier": "prettier --write './**/*.{js,ts}'"
+    "prettier": "prettier --write './**/*.{js,ts}'",
+    "release": "release-it"
   }
 }
