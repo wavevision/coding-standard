@@ -1,4 +1,3 @@
-/* eslint @typescript-eslint/no-var-requires: 'off' */
 const { presets, plugins } = require('./base');
 
 if (process.env.NODE_ENV === 'production') {

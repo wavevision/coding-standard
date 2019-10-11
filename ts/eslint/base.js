@@ -1,4 +1,3 @@
-/* eslint @typescript-eslint/no-var-requires: 'off' */
 const configs = require('./configs');
 
 const productionError =
@@ -20,7 +19,7 @@ module.exports = {
       modules: true,
     },
   },
-  plugins: ['@typescript-eslint', 'import', 'jest'],
+  plugins: ['@typescript-eslint', 'import', 'jest', 'prettier'],
   globals: {
     window: true,
     document: true,
@@ -38,7 +37,9 @@ module.exports = {
     'consistent-return': 'off',
     curly: ['error', 'multi-line'],
     'default-case': 'off',
+    'function-paren-newline': 'off',
     'guard-for-in': 'off',
+    'implicit-arrow-linebreak': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/first': 'off',
     'import/order': [
@@ -65,10 +66,16 @@ module.exports = {
     'spaced-comment': 'off',
     'no-console': productionError,
     'no-debugger': productionError,
+    'object-curly-newline': ['error', { consistent: true }],
     'operator-linebreak': [
       'error',
       'after',
-      { overrides: { '?': 'before', ':': 'before' } },
+      {
+        overrides: {
+          '?': 'before',
+          ':': 'before',
+        },
+      },
     ],
   },
   settings: {

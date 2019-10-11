@@ -1,4 +1,3 @@
-/* eslint @typescript-eslint/no-var-requires: 'off' */
 const base = require('./base');
 const configs = require('./configs');
 
@@ -11,14 +10,7 @@ module.exports = {
     'jsx-a11y/interactive-supports-focus': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/label-has-associated-control': 'off',
-    'jsx-a11y/label-has-for': [
-      'error',
-      {
-        required: {
-          every: ['id'],
-        },
-      },
-    ],
+    'jsx-a11y/label-has-for': ['error', { required: { every: ['id'] } }],
     'react/destructuring-assignment': 'off',
     'react/jsx-boolean-value': 'off',
     'react/jsx-curly-brace-presence': [
@@ -34,8 +26,6 @@ module.exports = {
   },
   settings: {
     ...base.settings,
-    react: {
-      version: 'detect',
-    },
+    react: { version: 'detect' },
   },
 };
