@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="Wavevision Point" default="init">
+<project name="Wavevision Coding Standard" default="init">
     <property name="bin" value="vendor/bin"/>
     <property name="codeSnifferExclude" value="*/data/*"/>
     <property name="codeSnifferRuleset" value="codesniffer-ruleset.xml"/>
