@@ -7,7 +7,6 @@ use SlevomatCodingStandard\Sniffs\TestCase;
 class VisibilityOrderSniffTest extends TestCase
 {
 
-
 	public function testError(): void
 	{
 		$checkedFile = self::checkFile(__DIR__ . '/data/VisibilityOrderInvalid.php');
@@ -37,4 +36,5 @@ class VisibilityOrderSniffTest extends TestCase
 	{
 		self::assertNoSniffError(self::checkFile(__DIR__ . '/data/VisibilityOrderValid.php'), 6);
 	}
+
 }

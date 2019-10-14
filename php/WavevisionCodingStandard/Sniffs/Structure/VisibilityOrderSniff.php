@@ -18,7 +18,6 @@ class VisibilityOrderSniff implements Sniff
 
 	public const INVALID_METHOD_ORDER = 'InvalidMethodOrder';
 
-
 	/**
 	 * @return array<mixed>
 	 */
@@ -157,7 +156,6 @@ class VisibilityOrderSniff implements Sniff
 		return $constants;
 	}
 
-
 	/**
 	 * @param array<int, int> $items
 	 */
@@ -181,4 +179,5 @@ class VisibilityOrderSniff implements Sniff
 			$level = $currentLevel;
 		}
 	}
+
 }

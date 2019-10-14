@@ -36,6 +36,7 @@ class VisibilityOrderInvalid
 	{
 		return 2;
 	}
+
 }
 
 $gvar = '';
