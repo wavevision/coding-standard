@@ -122,11 +122,13 @@ module.exports = {
 
 #### Polyfills
 
-Do not forget to import base polyfills that are critical for `babel` to compile your code correctly.
+Should your project need it, import `babel` polyfills consisting of `core-js` and `regenerator-runtime` stable versions.
 
 ```typescript
 import '@wavevision/coding-standard/ts/polyfills';
 ```
+
+> **Note:** This might add unnecessary code to your bundle. Make sure your setup needs all the polyfills, otherwise, import required features only.
 
 This should most likely happen in your project's top-level entry point.
 
