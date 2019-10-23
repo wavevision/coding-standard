@@ -36,7 +36,7 @@
   },
   "suggest": {
     "phpstan/phpstan": "PHP Static Analysis Tool - discover bugs in your code without running it!",
-    "sebastianbergmann/phpunit": "The PHP Unit Testing framework.",
+    "phpunit/phpunit": "The PHP Unit Testing framework.",
     "jakub-onderka/php-parallel-lint": "This tool check syntax of PHP files faster than serial check with fancier output."
   },
   "scripts": {
