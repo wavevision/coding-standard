@@ -64,6 +64,7 @@ module.exports = {
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
     'spaced-comment': 'off',
+    'no-confusing-arrow': 'off',
     'no-console': productionError,
     'no-debugger': productionError,
     'object-curly-newline': ['error', { consistent: true }],
