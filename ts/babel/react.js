@@ -1,4 +1,6 @@
-const { presets, plugins } = require('./base');
+const base = require('./base');
+
+const { plugins, presets } = base();
 
 if (process.env.NODE_ENV === 'production') {
   plugins.concat([
