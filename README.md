@@ -116,7 +116,8 @@ module.exports = {
 
 ```json
 {
-  "extends": "@wavevision/coding-standard/ts/tsconfig.json"
+  "extends": "@wavevision/coding-standard/ts/tsconfig.json",
+  "include": ["./src/**/*"]
 }
 ```
 
