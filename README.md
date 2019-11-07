@@ -3,13 +3,11 @@
 [![Build Status](https://travis-ci.org/wavevision/coding-standard.svg?branch=master)](https://travis-ci.org/wavevision/coding-standard)
 [![Coverage Status](https://coveralls.io/repos/github/wavevision/coding-standard/badge.svg?branch=master)](https://coveralls.io/github/wavevision/coding-standard?branch=master)
 [![PHPStan](https://img.shields.io/badge/style-level%20max-brightgreen.svg?label=phpstan)](https://github.com/phpstan/phpstan)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/wavevision/coding-standard)](https://github.com/wavevision/coding-standard/releases)
+[![PHP version](https://img.shields.io/badge/php-7.2-blue)](https://www.php.net/releases/7_2_0.php)
+[![TypeScript version](https://img.shields.io/badge/typescript-3.7-blue)](https://github.com/microsoft/TypeScript)
 
 Code style rules and presets for [PHP](#php), [SCSS and TypeScript](#scss-and-typescript). Also contains default [PhpStorm](#phpstorm) project code style.
-
-**Requirements:**
-
-- PHP 7.2
-- Node.js 10.16.0
 
 ## PHP
 
