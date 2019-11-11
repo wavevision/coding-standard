@@ -1,4 +1,4 @@
-const base = require('./base');
+const base = require('./index');
 
 const { plugins, presets } = base();
 

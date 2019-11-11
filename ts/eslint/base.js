@@ -1,5 +1,3 @@
-const configs = require('./configs');
-
 const productionError =
   process.env.NODE_ENV === 'production' ? 'error' : 'warn';
 
@@ -9,7 +7,14 @@ module.exports = {
     node: true,
     'jest/globals': true,
   },
-  extends: configs.concat('airbnb-base'),
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/typescript',
+    'plugin:jest/recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
