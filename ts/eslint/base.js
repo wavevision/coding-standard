@@ -35,7 +35,10 @@ module.exports = {
       { allowExpressions: true, allowTypedFunctionExpressions: true },
     ],
     '@typescript-eslint/explicit-member-accessibility': 'error',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      { ignoreRestSiblings: true },
+    ],
     'arrow-parens': ['error', 'as-needed'],
     camelcase: 'off',
     'comma-dangle': 'off',
