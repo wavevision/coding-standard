@@ -48,8 +48,8 @@ module.exports = {
     'function-paren-newline': 'off',
     'guard-for-in': 'off',
     'implicit-arrow-linebreak': 'off',
-    'import/no-extraneous-dependencies': 'off',
     'import/first': 'off',
+    'import/no-extraneous-dependencies': 'off',
     'import/order': [
       'error',
       {
@@ -65,16 +65,15 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'off',
+    'no-confusing-arrow': 'off',
+    'no-console': productionError,
+    'no-debugger': productionError,
     'no-nested-ternary': 'off',
     'no-param-reassign': 'off',
     'no-plusplus': 'off',
     'no-restricted-syntax': 'off',
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
-    'spaced-comment': 'off',
-    'no-confusing-arrow': 'off',
-    'no-console': productionError,
-    'no-debugger': productionError,
     'object-curly-newline': ['error', { consistent: true }],
     'operator-linebreak': [
       'error',
@@ -86,7 +85,16 @@ module.exports = {
         },
       },
     ],
+    'spaced-comment': 'off',
   },
+  overrides: [
+    {
+      files: '*.test.*',
+      rules: {
+        '@typescript-eslint/ban-ts-ignore': 'off',
+      },
+    },
+  ],
   settings: {
     'import/resolver': {
       typescript: {},
