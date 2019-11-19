@@ -32,7 +32,11 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-function-return-type': [
       'error',
-      { allowExpressions: true, allowTypedFunctionExpressions: true },
+      {
+        allowExpressions: true,
+        allowHigherOrderFunctions: true,
+        allowTypedFunctionExpressions: true,
+      },
     ],
     '@typescript-eslint/explicit-member-accessibility': 'error',
     '@typescript-eslint/no-unused-vars': [
