@@ -52,6 +52,17 @@ module.exports = {
     'function-paren-newline': 'off',
     'guard-for-in': 'off',
     'implicit-arrow-linebreak': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        mjs: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     'import/first': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/order': [
@@ -101,6 +112,7 @@ module.exports = {
     },
   ],
   settings: {
+    'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
     'import/resolver': {
       typescript: {},
     },
