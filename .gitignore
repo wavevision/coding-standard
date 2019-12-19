@@ -1,6 +1,7 @@
-/.idea
-/!.idea/codeStyles/codeStyleConfig.xml
-/!.idea/codeStyles/Project.xml
+/.idea/**
+!/.idea/codeStyles/
+!/.idea/codeStyles/codeStyleConfig.xml
+!/.idea/codeStyles/Project.xml
 /node_modules
 /vendor
 /temp
