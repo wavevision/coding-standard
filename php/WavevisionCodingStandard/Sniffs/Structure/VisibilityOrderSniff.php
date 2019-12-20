@@ -27,10 +27,9 @@ class VisibilityOrderSniff implements Sniff
 	}
 
 	/**
-	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
-	 * @return void|int
+	 * @param mixed $stackPtr
 	 */
-	public function process(File $phpcsFile, $stackPtr)
+	public function process(File $phpcsFile, $stackPtr): void
 	{
 		$this->checkConstants($phpcsFile, $stackPtr);
 		$this->checkStaticProperties($phpcsFile, $stackPtr);
