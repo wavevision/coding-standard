@@ -47,5 +47,20 @@
   },
   "scripts": {
     "phing": "phing"
+  },
+  "archive": {
+    "exclude": [
+      "/.*",
+      "/build.xml",
+      "/codesniffer-ruleset.xml",
+      "/package.json",
+      "/phpstan.neon",
+      "/phpunit.xml",
+      "/prettier.config.js",
+      "/scss",
+      "/ts",
+      "/tsconfig.json",
+      "/yarn.lock"
+    ]
   }
 }
