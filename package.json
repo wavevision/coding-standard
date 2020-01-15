@@ -2,6 +2,10 @@
   "name": "@wavevision/coding-standard",
   "version": "3.0.1",
   "description": "The Wavevision SCSS and TypeScript coding standard.",
+  "files": [
+    "scss",
+    "ts"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wavevision/coding-standard.git"
