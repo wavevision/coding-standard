@@ -41,8 +41,8 @@
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
     "autoprefixer": "^9.7.1",
-    "babel-jest": "^24.9.0",
-    "core-js": "3.4.0",
+    "babel-jest": "^25.2.6",
+    "core-js": "3.6.4",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.5.0",
@@ -53,23 +53,25 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^2.2.0",
-    "npm-run-all": "^4.1.5",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "postcss-bem-linter": "^3.3.0",
     "postcss-reporter": "^6.0.1",
-    "prettier": "^1.18.2",
+    "prettier": "^2.0.4",
     "regenerator-runtime": "^0.13.3",
-    "stylelint": "^11.1.1",
-    "stylelint-config-sass-guidelines": "^6.1.0",
+    "stylelint": "^13.3.0",
+    "stylelint-config-sass-guidelines": "^7.0.0",
     "stylelint-selector-bem-pattern": "^2.1.0",
     "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   },
   "peerDependencies": {
     "@babel/core": "^7.x",
     "@typescript-eslint/eslint-plugin": "^2.x",
     "@typescript-eslint/parser": "^2.x",
     "eslint": "^6.x",
-    "stylelint": "^11.x",
+    "stylelint": "^13.x",
     "typescript": "^3.x"
   },
   "scripts": {

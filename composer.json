@@ -28,9 +28,9 @@
     "slevomat/coding-standard": "^6.0"
   },
   "require-dev": {
-    "jakub-onderka/php-parallel-lint": "^1.0",
     "phing/phing": "^2.16",
     "php-coveralls/php-coveralls": "^2.1",
+    "php-parallel-lint/php-parallel-lint": "^1.0",
     "phpstan/phpstan": "^0.12.3",
     "phpunit/phpunit": "^8.3"
   },
@@ -41,9 +41,9 @@
     "sort-packages": true
   },
   "suggest": {
+    "php-parallel-lint/php-parallel-lint": "This tool check syntax of PHP files faster than serial check with fancier output.",
     "phpstan/phpstan": "PHP Static Analysis Tool - discover bugs in your code without running it!",
-    "phpunit/phpunit": "The PHP Unit Testing framework.",
-    "jakub-onderka/php-parallel-lint": "This tool check syntax of PHP files faster than serial check with fancier output."
+    "phpunit/phpunit": "The PHP Unit Testing framework."
   },
   "scripts": {
     "phing": "phing"
