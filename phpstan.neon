@@ -1,5 +1,0 @@
-parameters:
-	autoload_directories:
-		- %rootDir%/../../../php
-	autoload_files:
-		- %rootDir%/../../../php/tests/bootstrap.php
