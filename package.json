@@ -77,9 +77,8 @@
   "scripts": {
     "eslint": "eslint --fix ./scss ./ts",
     "fix": "run-s eslint prettier",
-    "phing": "composer phing fix",
     "postversion": "git push --tags && yarn publish --access public --new-version $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"",
     "prettier": "prettier --write './**/*.{js,ts}'",
-    "preversion": "run-s phing fix"
+    "preversion": "yarn fix"
   }
 }

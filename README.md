@@ -1,12 +1,10 @@
 <p align="center"><a href="https://github.com/wavevision"><img alt="Wavevision s.r.o." src="https://wavevision.com/images/wavevision-logo.png" width="120" /></a></p>
 <h1 align="center">Coding Standard</h1>
 
-[![Build Status](https://travis-ci.org/wavevision/coding-standard.svg?branch=master)](https://travis-ci.org/wavevision/coding-standard)
-[![Coverage Status](https://coveralls.io/repos/github/wavevision/coding-standard/badge.svg?branch=master)](https://coveralls.io/github/wavevision/coding-standard?branch=master)
-[![PHPStan](https://img.shields.io/badge/style-level%20max-brightgreen.svg?label=phpstan)](https://github.com/phpstan/phpstan)
 [![Release](https://img.shields.io/github/v/tag/wavevision/coding-standard?label=version&sort=semver)](https://github.com/wavevision/coding-standard/releases)
 [![PHP version](https://img.shields.io/badge/php-7.4-blue)](https://www.php.net/releases/7_4_0.php)
-[![TypeScript version](https://img.shields.io/badge/typescript-3.8-blue)](https://github.com/microsoft/TypeScript)
+[![TypeScript version](https://img.shields.io/badge/typescript-3.9-blue)](https://github.com/microsoft/TypeScript)
+[![PHPStan](https://img.shields.io/badge/style-level%20max-brightgreen.svg?label=phpstan)](https://github.com/phpstan/phpstan)
 
 Code style rules and presets for [PHP](#php), [SCSS and TypeScript](#scss-and-typescript). Also contains default [PhpStorm](#phpstorm) project code style.
 
