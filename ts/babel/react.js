@@ -1,7 +1,6 @@
-const base = require('./index');
+const base = require('.');
 
 const { plugins, presets } = base();
-
 if (process.env.NODE_ENV === 'production') {
   plugins.concat([
     '@babel/plugin-transform-react-inline-elements',

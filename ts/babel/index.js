@@ -7,9 +7,6 @@ const plugins = [
   '@babel/plugin-proposal-object-rest-spread',
 ];
 
-exports.presets = presets;
-exports.plugins = plugins;
-
 module.exports = () => ({
   presets,
   plugins,
