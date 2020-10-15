@@ -3,7 +3,7 @@
 
 [![Release](https://img.shields.io/github/v/tag/wavevision/coding-standard?label=version&sort=semver)](https://github.com/wavevision/coding-standard/releases)
 [![PHP version](https://img.shields.io/badge/php-7.4-blue)](https://www.php.net/releases/7_4_0.php)
-[![TypeScript version](https://img.shields.io/badge/typescript-3.9-blue)](https://github.com/microsoft/TypeScript)
+[![TypeScript version](https://img.shields.io/badge/typescript-4.0-blue)](https://github.com/microsoft/TypeScript)
 [![PHPStan](https://img.shields.io/badge/style-level%20max-brightgreen.svg?label=phpstan)](https://github.com/phpstan/phpstan)
 
 Code style rules and presets for [PHP](#php), [SCSS and TypeScript](#scss-and-typescript). Also contains default [PhpStorm](#phpstorm) project code style.
