@@ -26,9 +26,9 @@
   },
   "require": {
     "php": ">=7.4",
-    "php-parallel-lint/php-parallel-lint": "^1.0",
-    "phpstan/phpstan": "^0.12.3",
-    "slevomat/coding-standard": "^6.0"
+    "php-parallel-lint/php-parallel-lint": "^1.2",
+    "phpstan/phpstan": "^0.12",
+    "slevomat/coding-standard": "^6.4"
   },
   "archive": {
     "exclude": [

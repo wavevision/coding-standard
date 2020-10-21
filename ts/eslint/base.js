@@ -116,5 +116,6 @@ module.exports = {
     'import/resolver': {
       typescript: {},
     },
+    jest: { version: 'detect' },
   },
 };
