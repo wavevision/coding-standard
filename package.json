@@ -1,6 +1,6 @@
 {
   "name": "@wavevision/coding-standard",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "description": "The Wavevision SCSS and TypeScript coding standard.",
   "files": [
     "phpstorm",
