@@ -43,6 +43,7 @@ module.exports = {
       'error',
       { ignoreRestSiblings: true },
     ],
+    '@typescript-eslint/no-use-before-define': 'error',
     'arrow-parens': ['error', 'as-needed'],
     camelcase: 'off',
     'comma-dangle': 'off',
@@ -89,6 +90,7 @@ module.exports = {
     'no-restricted-syntax': 'off',
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
+    'no-use-before-define': 'off',
     'object-curly-newline': ['error', { consistent: true }],
     'operator-linebreak': [
       'error',
