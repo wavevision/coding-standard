@@ -2,7 +2,6 @@
 /.coveralls.yml
 /.travis.yml
 /build.xml
-/codesniffer-ruleset.xml
 /composer.json
 /composer.lock
 /node_modules

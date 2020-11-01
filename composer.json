@@ -34,7 +34,6 @@
     "exclude": [
       "/.*",
       "/build.xml",
-      "/codesniffer-ruleset.xml",
       "/package.json",
       "/phpstan.neon",
       "/phpunit.xml",
