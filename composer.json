@@ -1,7 +1,7 @@
 {
   "name": "wavevision/coding-standard",
   "description": "The Wavevision PHP coding standard.",
-  "type": "library",
+  "type": "phpcodesniffer-standard",
   "license": "MIT",
   "authors": [
     {
