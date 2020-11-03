@@ -1,6 +1,6 @@
 {
   "name": "wavevision/coding-standard",
-  "description": "The Wavevision PHP coding standard.",
+  "description": "The Wavevision coding standard.",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -34,7 +34,6 @@
     "exclude": [
       "/.*",
       "/build.xml",
-      "/codesniffer-ruleset.xml",
       "/package.json",
       "/phpstan.neon",
       "/phpunit.xml",

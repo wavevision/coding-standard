@@ -27,13 +27,13 @@ composer require --dev wavevision/coding-standard
 Add to existing ruleset
 
 ```xml
-<rule ref="vendor/wavevision/coding-standard/php/WavevisionCodingStandard/ruleset.xml"/>
+<rule ref="vendor/wavevision/coding-standard/php/WavevisionCodingStandard"/>
 ```
 
 or use directly
 
 ```bash
-vendor/bin/phpcs <pathToSources> -p --standard=vendor/wavevision/coding-standard/php/WavevisionCodingStandard/ruleset.xml
+vendor/bin/phpcs -p --standard=vendor/wavevision/coding-standard/php/WavevisionCodingStandard <pathToSources>
 ```
 
 ## SCSS and TypeScript
