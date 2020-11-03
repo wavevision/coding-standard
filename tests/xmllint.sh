@@ -5,7 +5,7 @@
 # BASH-VERSION  :4.2+
 # DEPENDS       :apt-get install wget libxml2-utils
 
-RULESET="WavevisionCodingStandard/ruleset.xml"
+RULESET="php/WavevisionCodingStandard/ruleset.xml"
 
 set -e
 
