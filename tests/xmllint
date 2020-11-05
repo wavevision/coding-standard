@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Lint ruleset XML file.
 #
 # BASH-VERSION  :4.2+
 # DEPENDS       :apt-get install wget libxml2-utils
 
-RULESET="php/WavevisionCodingStandard/ruleset.xml"
+RULESET="php/ruleset.xml"
 
 set -e
 

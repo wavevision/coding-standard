@@ -108,7 +108,7 @@ module.exports = {
     {
       files: '*.test.*',
       rules: {
-        '@typescript-eslint/ban-ts-ignore': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
       },
     },
