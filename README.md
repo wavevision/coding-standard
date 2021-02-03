@@ -6,7 +6,8 @@
 [![TypeScript version](https://img.shields.io/badge/typescript-4.0-blue)](https://github.com/microsoft/TypeScript)
 [![PHPStan](https://img.shields.io/badge/style-level%20max-brightgreen.svg?label=phpstan)](https://github.com/phpstan/phpstan)
 
-Code style rules and presets for [PHP](#php), [SCSS and TypeScript](#scss-and-typescript). Also contains default [PhpStorm](#phpstorm) project code style.
+Code style rules and presets for [PHP](#php), [SCSS and TypeScript](#scss-and-typescript). Also contains
+default [PhpStorm](#phpstorm) project code style.
 
 ## PHP
 
@@ -27,6 +28,7 @@ composer require --dev wavevision/coding-standard
 Add to existing ruleset
 
 ```xml
+
 <rule ref="vendor/wavevision/coding-standard/php/ruleset.xml"/>
 ```
 
@@ -63,31 +65,35 @@ npm install --save-dev @wavevision/coding-standard
 
 ### Setup
 
-Following config examples can be further extended and customized according to project's needs compliant with respective library docs.
+Following config examples can be further extended and customized according to project's needs compliant with respective
+library docs.
 
 #### `babel.config.js`
 
 ```javascript
 module.exports = {
-  presets: ['@wavevision/coding-standard/ts/babel'],
+  presets: [
+    '@wavevision/coding-standard/ts/babel',
+    '@wavevision/coding-standard/ts/babel/react', // if project uses React
+  ],
 };
 ```
-
-> **React version:** `@wavevision/coding-standard/ts/babel/react`.
 
 #### `.eslintrc.js`
 
 ```javascript
 module.exports = {
-  extends: require.resolve('@wavevision/coding-standard/ts/eslint'),
+  extends: [
+    require.resolve('@wavevision/coding-standard/ts/eslint'),
+    require.resolve('@wavevision/coding-standard/ts/eslint/jest'), // if project uses Jest
+    require.resolve('@wavevision/coding-standard/ts/eslint/react'), // if project uses React
+  ],
   parserOptions: {
     project: 'tsconfig.json',
     tsconfigRootDir: '.',
   },
 };
 ```
-
-> **React version:** `@wavevision/coding-standard/ts/eslint/react`.
 
 #### `postcss.config.js`
 

@@ -1,6 +1,4 @@
-const base = require('.');
-
-const { plugins, presets } = base();
+const plugins = [];
 if (process.env.NODE_ENV === 'production') {
   plugins.concat([
     '@babel/plugin-transform-react-inline-elements',
@@ -12,6 +10,6 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 module.exports = () => ({
-  presets: presets.concat('@babel/preset-react'),
+  presets: ['@babel/preset-react'],
   plugins,
 });
