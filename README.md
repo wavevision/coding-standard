@@ -84,10 +84,10 @@ module.exports = {
 ```javascript
 module.exports = {
   extends: [
-    require.resolve('@wavevision/coding-standard/ts/eslint'),
-    require.resolve('@wavevision/coding-standard/ts/eslint/jest'), // if project uses Jest
-    require.resolve('@wavevision/coding-standard/ts/eslint/react'), // if project uses React
-  ],
+    '@wavevision/coding-standard/ts/eslint',
+    '@wavevision/coding-standard/ts/eslint/jest', // if project uses Jest
+    '@wavevision/coding-standard/ts/eslint/react', // if project uses React
+  ].map(require.resolve),
   parserOptions: {
     project: 'tsconfig.json',
     tsconfigRootDir: '.',
