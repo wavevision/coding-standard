@@ -5,12 +5,10 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    'jest/globals': true,
   },
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
-    'plugin:jest/recommended',
     'plugin:prettier/recommended',
     'prettier',
     'prettier/@typescript-eslint',
@@ -24,7 +22,7 @@ module.exports = {
       modules: true,
     },
   },
-  plugins: ['@typescript-eslint', 'import', 'jest', 'prettier'],
+  plugins: ['@typescript-eslint', 'import', 'prettier'],
   globals: {
     window: true,
     document: true,
@@ -104,20 +102,10 @@ module.exports = {
     ],
     'spaced-comment': 'off',
   },
-  overrides: [
-    {
-      files: '*.test.*',
-      rules: {
-        '@typescript-eslint/ban-ts-comment': 'off',
-        '@typescript-eslint/explicit-function-return-type': 'off',
-      },
-    },
-  ],
   settings: {
     'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
     'import/resolver': {
       typescript: {},
     },
-    jest: { version: 'detect' },
   },
 };
