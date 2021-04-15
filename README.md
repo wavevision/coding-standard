@@ -85,8 +85,8 @@ module.exports = {
 module.exports = {
   extends: [
     '@wavevision/coding-standard/ts/eslint',
-    '@wavevision/coding-standard/ts/eslint/jest', // if project uses Jest
     '@wavevision/coding-standard/ts/eslint/react', // if project uses React
+    '@wavevision/coding-standard/ts/eslint/jest', // if project uses Jest
   ].map(require.resolve),
   parserOptions: {
     project: 'tsconfig.json',
@@ -94,6 +94,8 @@ module.exports = {
   },
 };
 ```
+
+> **Note:** The order of `extends` items is crucial for all rules to work correctly.
 
 #### `postcss.config.js`
 
