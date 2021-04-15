@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'prettier/react'],
+  extends: ['airbnb', 'prettier/react', './base'],
   plugins: ['react-hooks'],
   rules: {
     'jsx-a11y/click-events-have-key-events': 'off',

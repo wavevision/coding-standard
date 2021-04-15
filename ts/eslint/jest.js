@@ -2,7 +2,7 @@ module.exports = {
   env: {
     'jest/globals': true,
   },
-  extends: ['plugin:jest/recommended'],
+  extends: ['plugin:jest/recommended', './base'],
   plugins: ['jest'],
   overrides: [
     {
